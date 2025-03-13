@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import Register from "./pages/Register";
 
 const App: React.FC = () => {
