@@ -7,15 +7,17 @@ const Register: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:5000/api/users/register", {
+      const response = await fetch("/api/users/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
       });
       const data = await response.json();
-      console.log(data); // { message: "User registered" }
+      console.log(data); // Respuesta del backend
+      alert(data.message); // Muestra un mensaje al usuario
     } catch (error) {
       console.error("Error:", error);
+      alert("Error al registrar el usuario");
     }
   };
 

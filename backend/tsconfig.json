@@ -15,6 +15,7 @@
       "forceConsistentCasingInFileNames": true,
       "emitDecoratorMetadata": true,
       "noEmit": true,
+      "typeRoots": ["./node_modules/@types", "./types"],
       "experimentalDecorators": true,
       "paths": {
       "@/*": ["./*"]
