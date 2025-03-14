@@ -1,18 +1,23 @@
 {
     "compilerOptions": {
-      "jsx": "react",
+      "jsx": "react-jsx",
       "target": "ES6",
+      "lib": ["dom", "dom.iterable", "esnext"],
+      "allowJs": true,
       "module": "commonjs",
       "outDir": "./dist",
       "rootDir": "./src",
       "strict": true,
       "moduleResolution": "node",
-      "lib": ["dom", "es6"],
+      "resolveJsonModule": true,
       "esModuleInterop": true,
       "skipLibCheck": true,
       "forceConsistentCasingInFileNames": true,
       "emitDecoratorMetadata": true,
-      "experimentalDecorators": true
+      "noEmit": true,
+      "experimentalDecorators": true,
+      "paths": {
+      "@/*": ["./*"]
     },
     "include": ["src/**/*"],
     "exclude": ["node_modules"]
