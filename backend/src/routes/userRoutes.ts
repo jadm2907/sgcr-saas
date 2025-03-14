@@ -1,4 +1,5 @@
-import express from "express";
+import express = require("express");
+import cors = require("cors");
 const router = express.Router();
 
 router.post("/register", (req, res) => {
