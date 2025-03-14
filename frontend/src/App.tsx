@@ -1,13 +1,7 @@
-import React, { FC } from "react";
-import Register from "./pages/Register";
+import React from 'react';
 
 const App: React.FC = () => {
-  return (
-    <div>
-      <h1>SGCR SaaS</h1>
-      <Register />
-    </div>
-  );
+  return <h1>¡Hola, mundo!</h1>;
 };
 
 export default App;
